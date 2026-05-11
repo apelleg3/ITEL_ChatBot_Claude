@@ -98,12 +98,15 @@ for message in st.session_state.messages[1:]:
         with st.chat_message(message["role"], avatar=avatar):
             st.markdown(message["content"])
 
+# Load API key from environment variable
+API_KEY = os.environ.get("API_KEY")
+
 # Load API client
 if api == "openai":
-    client = OpenAI(api_key=st.secrets["API_KEY"])
+    client = OpenAI(api_key=API_KEY)
     api_kwargs = {"stream": True}
 elif api == "anthropic":
-    client = anthropic.Anthropic(api_key=st.secrets["API_KEY"])
+    client = anthropic.Anthropic(api_key=API_KEY)
     api_kwargs = {"system": config.SYSTEM_PROMPT}
 
 # API kwargs
