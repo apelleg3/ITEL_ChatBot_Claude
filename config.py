@@ -102,7 +102,7 @@ AVATAR_INTERVIEWER = "\U0001F393"
 AVATAR_RESPONDENT = "\U0001F4A1"
 
 # Closing note displayed after interview completion
-CLOSING_NOTE = """Curious about how this AI-enabled chatbot works? Learn more about the dissertation research behind it at [andreapellegrini.info/research.html](https://andreapellegrini.info/research.html)."""
+CLOSING_NOTE = """Curious about how AI-enabled chatbots have been used in mixed methods research? Learn more about its use in dissertation research at [andreapellegrini.info/research.html](https://andreapellegrini.info/research.html)."""
 
 # Optional: Follow-up Probes (for adaptive follow-ups)
 FOLLOW_UP_PROBES = {
